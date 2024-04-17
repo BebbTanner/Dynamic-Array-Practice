@@ -1,6 +1,8 @@
 /*
 Dynamic array practice
 A dynamic array is an array whose size can be created during the runtime of program.
+
+With the template setup for the Dynamic array, Now I want to try and make something out of it.
 */
 
 #include <iostream>
@@ -33,6 +35,11 @@ int main() {
 	for (int i = 0; i < 4; i++) {
 		cout << dArray[i] << endl;
 	}
+
+	/*
+	This deletes the array pointer that was defined at the top of int main.
+	*/
+	delete[] dArray;
 
 	return 0;
 }
