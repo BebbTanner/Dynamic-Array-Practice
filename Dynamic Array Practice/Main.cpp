@@ -42,6 +42,15 @@ This is a for loop that will print out the values that are currently stored in d
 	for (int i = 0; i < Capacity;i++) {
 		cout << dArray[i] << endl;
 	}
+
+/*
+This is a for loop that will print out the memory addresses of the values in the array.
+*/
+	cout << "Memory locations of the values: " << endl;
+	for (int k = 0; k < Capacity; k++) {
+		cout << &dArray[k] << endl;
+	}
+
 /*
 This deletes the array pointer that was defined at the top of int main.
 */
